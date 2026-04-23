@@ -1,0 +1,453 @@
+body {
+  margin: 0;
+  background-color: #000000;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  background: black;
+  margin: 0;
+  border-radius: 0;
+}
+
+.left-panel {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+}
+.content{
+  flex: 1;
+  height: 200px;
+}
+
+.header {
+  background:url(images/Background.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 40px;
+  width: 100%;
+  position:fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  transition: 0.4s;  
+  border-bottom: solid 2px; 
+  border-image: linear-gradient(to bottom, #ccd8ec, #a6aed6) 1;
+}
+.header-work{
+  background:url(../../../Downloads/AdobeStock_1942215628.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 15px;
+  width: 100%;
+  position:sticky;
+  top: 0;
+  padding-bottom: 25px;
+  left: auto;
+  right: auto;
+  box-sizing: border-box;
+  transition: 0.4s; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  border-bottom: solid 2px; 
+  border-image: linear-gradient(to bottom, #ccd8ec, #a6aed6) 1;
+}
+.header-work h1 {
+  font-size: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  margin: 0 0 0 0;
+}
+.nav-work a {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to top, #463f51, #4f4e72);
+  color: white;
+  padding: 5px 26px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  position: relative;
+  top: 15px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  transition: all 0.35s ease; 
+}
+
+.nav-work {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.header h1 {
+  font-size: 150px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  margin: -10px -100px;
+}
+
+.content {
+  display: flex;
+  min-height: 0;
+  padding: 50px 80px;
+  gap: 24px;
+  align-content: start;
+  align-items: flex-start;
+  margin-top: 0;
+  background-color: #000000;
+  color: white;
+  justify-content: center;
+
+}
+.content-work {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 80px 120px;
+  align-items: center;
+}
+
+.content-home {
+  min-height: 0;
+  padding: 50px 80px;
+  display: grid;
+  gap: 24px;
+  align-content: start;
+  margin-top: 0;
+  background-color: #000000;
+  color: white;
+  margin-top: 275px;
+  display: grid;
+  place-items: center;
+}
+.contact-work {
+  display: grid;
+  grid-template-rows: 1fr 1fr; 
+  gap: 60px;
+  padding: 50px 80px;
+  align-items: center;
+}
+
+
+.content-contact {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; 
+  gap: 60px;
+  padding: 50px 80px;
+  align-items: center;
+}
+
+.content-contact h2 {
+  color: #ccd8ec;
+  font-size: 200px;
+  margin-top: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: .8;
+  letter-spacing: -8px;
+  
+}
+.contact-text {
+  max-width: 600px;  
+}
+.card {
+  display: flex;             
+  align-items: center;        
+  gap: 20px;                  
+  background: black;
+  color: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 0px 18px rgba(204, 216, 236, 0.2);
+  width:1300px; 
+  margin: 0 auto;
+}
+.card h2,.card-proj1 h2, .card-proj2 h2 {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif; 
+  font-weight: 200;        
+}
+.card p, .card-proj1 p, .card-proj2 p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif; 
+}
+
+.card-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.card-content {
+  flex: 1;                    
+}
+.card-proj1, .card-proj2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: black;
+  color: white;
+  padding: 24px;
+  border-radius: 10px;
+  box-shadow: 0 0px 18px rgba(204, 216, 236, 0.2);
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  position: relative; 
+}
+.project-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  text-decoration: none;
+  background: linear-gradient(to top, #463f51, #4f4e72);
+  color: white;
+  padding: 6px 20px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-family: "Bebas Neue", sans-serif;
+  border: 2px solid white;
+  transition: 0.3s ease;
+}
+
+.project-btn:hover {
+  background: white;
+  color: #463f51;
+  transform: translateY(-4px);
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+}
+
+.resume-card{
+  background: black;
+  color: white;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+.content h2 {
+  color: #ccd8ec;
+  font-size: 20px;
+  margin-top: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.content p {
+  font-size: 16px;
+  font-family: "Montserrat";
+  line-height: 1.6;
+  color: white;
+}
+.footer {
+  background: linear-gradient(to top, #463f51a4, #7f84bd);
+  padding: 10px;
+  text-align: center;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  left: 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+
+.right-panel {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  width: 240px;
+  min-height: calc(100% - 40px);
+  background: #522630;
+  color: white;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+.profile-photo {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 8px;
+  display: block;
+}
+
+.profile-details p {
+  margin: 0 0 12px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+.nav {
+  text-align: center;
+}
+
+/* TAB STYLE */
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to top, #463f51, #4f4e72);
+  color: white;
+  padding: 5px 26px;
+  margin-right: 14px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  position: relative;
+  top: 5px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  transition: all 0.35s ease; 
+}
+
+.nav a:hover, .nav-work a:hover {
+  background: white;
+  transform: translateY(-4px);
+  color: #463f51;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+}
+.nav a.active:hover, .nav-work a.active:hover {
+  color: #463f51;
+  background: linear-gradient(to bottom, #7f84bd, #a6aed6);
+}
+
+.nav a.active, .nav-work a.active {
+  background: white;
+  color: #4f4e72;
+  border-radius: 15PX;
+  border-bottom: 5px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.footer img:hover {
+  filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 16px #fff);
+  transform: translateY(-4px);
+}
+.contact-form-box {
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+    margin-top: -225px;
+}
+
+.contact-form label {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #ccd8ec;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #ccd8ec;
+  border-radius: 12px;
+  background: #111;
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 10px rgba(204, 216, 236, 0.25);
+}
+
+.contact-form button {
+  width: fit-content;
+  padding: 5px 26px;
+  border: 2px solid white;
+  border-radius: 999px;
+  background: linear-gradient(to top, #463f51, #4f4e72);
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: white;
+  transform: translateY(-4px);
+  color: #463f51;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+}
+.proj1-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.proj2-img {
+  width: auto;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/*fonts*/
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
